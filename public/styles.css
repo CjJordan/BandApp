@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #41444e;
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" 
+                          "main";
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+h1{
+    font-size: 2.35em;
+    font-weight: bold;
+    font-family: 'Crimson Text', serif;
+}
+
+header{
+    background-color: #b90e2b;
+    color: #fac532;
+    grid-area: header;
+    font-family: 'Crimson Text', serif;
+    display: grid;
+    align-items: center;
+    padding: 0 140px;
+    font-size: 50px;
+    letter-spacing: -1.5px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.middle{
+    width: 80%;
+    border: 2px solid #ccc;
+    height: 450px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "login" 
+                          "msg";
+    justify-items: center;
+    box-shadow: 2px 2px 5px #888888, -1px 2px 2px #888888;
+    /* align-items: center; */
+}
+
+.banner{
+    background: url('images/bank.jpg');
+    background-size: cover; 
+}
+
+.login{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 15% 0;
+    min-width: 225px;
+    
+}
+
+.msg{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #d5ccb4);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.msg h1{
+    margin-top: 55px;
+    margin-left: 60px;
+    text-shadow: 0 0 20px #d5ccb4;
+}
+
+.msg p{
+    text-align: center;
+    margin-left: 60px;
+    text-shadow: 0 0 20px #d5ccb4;
+}
+
+form{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+    color: white;
+}
+
+input, button{
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #434343;
+    font-family: verdana;
+    font-size: 13px;
+    height: 35px;
+    padding: 9px 10px;
+    width: 184px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin: 20px;
+}
+
+input.register, button.register{
+    margin: 7px
+}
+
+button{
+    color: white;
+    background: #b90e2b;
+    cursor: pointer;
+}
+
+.login p{
+    margin: auto;
+    text-align: center;
+    color: snow;
+    margin-top: 30px;
+}
+
+.xfer, .account{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.xfer{
+    border-left: #ddd 1px solid;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Embargo Bank</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <header>Embargo Bank</header>
+  <div class="main">
+    <div class="middle">
+      <div class="account">
+        <div>
+          <h1>Account Balance</h1>
+          <p id="funds">$0.00</p>
+        </div>
+
+      </div>
+      <div class="xfer">
+        <div>
+          <h1>Transfer Funds</h1>
+          <form>
+            <select id="users">
+              <option value="">Select a User</option>
+            </select>
+            <input type="text" id="amount" placeholder="$0.00" />
+            <button id="xfer" type="submit">Transfer Funds</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/account.js"></script>
+</body>
+
+</html>
